@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/AliceBlue"
+    tools:context="com.example.annemarie.dublinbikes.MainActivity">
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Dublin Bikes"
+        android:paddingTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textColor="@color/CadetBlue"
+        />
+
+    <ImageView
+        android:id="@+id/dublinBikes.jpg"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:layout_alignBottom="@+id/gotologin_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/dublinbikes" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/CadetBlue"
+            android:padding="5dp"
+            android:text="Register"
+            android:textColor="@color/White"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/gotologin_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/CadetBlue"
+            android:padding="5dp"
+            android:text="Go to Login"
+            android:textColor="@color/White"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+
+            android:layout_marginEnd="53dp"
+            android:layout_alignParentBottom="true">
+
+            <!--android:layout_marginBottom="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"-->
+
+    </Button>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
